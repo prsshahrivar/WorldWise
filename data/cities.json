@@ -1,0 +1,88 @@
+{
+  "cities": [
+    {
+      "cityName": "Kharanaq",
+      "country": "Iran (Islamic Republic of)",
+      "emoji": "🇮🇷",
+      "date": "2023-07-28T07:09:33.926Z",
+      "notes": "",
+      "position": {
+        "lat": "32.83912948976976",
+        "lng": "55.675071461681085"
+      },
+      "id": 98443206
+    },
+    {
+      "cityName": "Kondinsky District",
+      "country": "Russian Federation (the)",
+      "emoji": "🇷🇺",
+      "date": "2023-07-28T07:11:26.826Z",
+      "notes": "",
+      "position": {
+        "lat": "60.2555450261629",
+        "lng": "67.17233853522866"
+      },
+      "id": 98443207
+    },
+    {
+      "cityName": "Afsin",
+      "country": "Turkiye",
+      "emoji": "🇹🇷",
+      "date": "2023-07-28T07:11:42.040Z",
+      "notes": "",
+      "position": {
+        "lat": "38.272741950145914",
+        "lng": "36.9850413318912"
+      },
+      "id": 98443208
+    },
+    {
+      "cityName": "Nemyriv",
+      "country": "Ukraine",
+      "emoji": "🇺🇦",
+      "date": "2023-07-28T07:12:36.000Z",
+      "notes": "",
+      "position": {
+        "lat": "49.03630683127239",
+        "lng": "28.98905863720644"
+      },
+      "id": 98443210
+    },
+    {
+      "cityName": "Mary",
+      "country": "Turkmenistan",
+      "emoji": "🇹🇲",
+      "date": "2023-07-28T08:10:54.082Z",
+      "notes": "",
+      "position": {
+        "lat": "37.57941251343841",
+        "lng": "61.69921875000001"
+      },
+      "id": 98443211
+    },
+    {
+      "cityName": "Wycombe",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "🇬🇧",
+      "date": "2023-07-28T08:11:24.195Z",
+      "notes": "",
+      "position": {
+        "lat": "51.72702815704777",
+        "lng": "-0.8789062500000001"
+      },
+      "id": 98443212
+    },
+    {
+      "cityName": "Zamosc",
+      "country": "Poland",
+      "emoji": "🇵🇱",
+      "date": "2023-07-28T10:41:42.806Z",
+      "notes": "",
+      "position": {
+        "lat": "50.736455137010665",
+        "lng": "23.334960937500004"
+      },
+      "id": 98443213
+    }
+  ]
+}
