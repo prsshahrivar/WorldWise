@@ -1,5 +1,5 @@
 /* eslint-disable */
-import {createContext, useContext, useEffect, useReducer} from "react";
+import {createContext, useCallback, useContext, useEffect, useReducer} from "react";
 
 
 const CitiesContext = createContext()
@@ -85,12 +85,13 @@ function CitiesProvider({children}) {
     }, [])
 
 
-    // Loading One City Details From API Server
-    async function getCity(id) {
+    // Loading One City Details From API Server and Memoize it With useCallback() (Because Its a Function)
+    const getCity = useCallback (async function getCity(id) {
 
         if (currentCity.id === Number(id)) return;
 
         dispatch({type: 'loading'})
+
         try {
             const res = await fetch(`${BASE_URL}/cities/${id}`)
             const data = await res.json();
@@ -99,7 +100,7 @@ function CitiesProvider({children}) {
             alert('Error Occurred While Loading the Data...')
             dispatch({type: 'finish/loading'})
         }
-    }
+    }, [currentCity.id] )
 
 
     // Posting Created City to API Server (Managing Remote State and UI State)

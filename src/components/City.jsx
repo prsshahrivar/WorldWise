@@ -1,5 +1,4 @@
-/* eslint-disable*/
-import {useNavigate, useParams, useSearchParams} from "react-router-dom"
+import {useNavigate, useParams} from "react-router-dom"
 import styles from "./City.module.css";
 import {useCities} from "../contexts/CitiesContext";
 import {useEffect} from "react";
@@ -24,13 +23,11 @@ function City() {
     const {emoji, cityName, date, notes} = currentCity
 
 
-
     useEffect(function () {
 
         getCity(id)
 
-    }, [id])
-
+    }, [id, getCity])
 
 
     if (isLoading) return <Spinner/>
@@ -68,7 +65,7 @@ function City() {
             </div>
 
             <div>
-                <Button onClick={()=>navigator(-1)} type='back'>Back </Button>
+                <Button onClick={() => navigator(-1)} type='back'>Back </Button>
             </div>
         </div>
     );
